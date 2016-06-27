@@ -1,0 +1,593 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'react-pdf-js' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 warn package.json meteor@1.0.0 No description
+5 warn package.json meteor@1.0.0 No repository field.
+6 warn package.json meteor@1.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'react-pdf-js', null ]
+9 verbose cache add name=undefined spec="react-pdf-js" args=["react-pdf-js",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'react-pdf-js',
+10 verbose parsed url   path: 'react-pdf-js',
+10 verbose parsed url   href: 'react-pdf-js' }
+11 silly lockFile fb07945e-react-pdf-js react-pdf-js
+12 verbose lock react-pdf-js /home/ucduser/.npm/fb07945e-react-pdf-js.lock
+13 silly lockFile fb07945e-react-pdf-js react-pdf-js
+14 silly lockFile fb07945e-react-pdf-js react-pdf-js
+15 verbose addNamed [ 'react-pdf-js', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile 52277497-react-pdf-js react-pdf-js@
+18 verbose lock react-pdf-js@ /home/ucduser/.npm/52277497-react-pdf-js.lock
+19 silly addNameRange { name: 'react-pdf-js', range: '*', hasData: false }
+20 verbose url raw react-pdf-js
+21 verbose url resolving [ 'https://registry.npmjs.org/', './react-pdf-js' ]
+22 verbose url resolved https://registry.npmjs.org/react-pdf-js
+23 info trying registry request attempt 1 at 14:58:30
+24 verbose etag "7YV3ZH9BX69GKN1DMPG47378Q"
+25 http GET https://registry.npmjs.org/react-pdf-js
+26 http 304 https://registry.npmjs.org/react-pdf-js
+27 silly registry.get cb [ 304,
+27 silly registry.get   { date: 'Fri, 24 Jun 2016 18:58:30 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     'cache-control': 'max-age=300',
+27 silly registry.get     etag: '"7YV3ZH9BX69GKN1DMPG47378Q"',
+27 silly registry.get     age: '30',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-iad2124-IAD',
+27 silly registry.get     'x-cache': 'HIT',
+27 silly registry.get     'x-cache-hits': '1',
+27 silly registry.get     'x-timer': 'S1466794710.724070,VS0,VE0',
+27 silly registry.get     vary: 'Accept-Encoding' } ]
+28 verbose etag react-pdf-js from cache
+29 silly addNameRange number 2 { name: 'react-pdf-js', range: '*', hasData: true }
+30 silly addNameRange versions [ 'react-pdf-js',
+30 silly addNameRange   [ '1.0.0',
+30 silly addNameRange     '1.0.7',
+30 silly addNameRange     '1.0.8',
+30 silly addNameRange     '1.0.9',
+30 silly addNameRange     '1.0.10',
+30 silly addNameRange     '1.0.11',
+30 silly addNameRange     '1.0.12',
+30 silly addNameRange     '1.0.13',
+30 silly addNameRange     '1.0.14',
+30 silly addNameRange     '1.0.15',
+30 silly addNameRange     '1.0.16',
+30 silly addNameRange     '1.0.17',
+30 silly addNameRange     '1.0.18',
+30 silly addNameRange     '1.0.19' ] ]
+31 verbose addNamed [ 'react-pdf-js', '1.0.19' ]
+32 verbose addNamed [ '1.0.19', '1.0.19' ]
+33 silly lockFile 2811fceb-react-pdf-js-1-0-19 react-pdf-js@1.0.19
+34 verbose lock react-pdf-js@1.0.19 /home/ucduser/.npm/2811fceb-react-pdf-js-1-0-19.lock
+35 silly lockFile 2811fceb-react-pdf-js-1-0-19 react-pdf-js@1.0.19
+36 silly lockFile 2811fceb-react-pdf-js-1-0-19 react-pdf-js@1.0.19
+37 silly lockFile 52277497-react-pdf-js react-pdf-js@
+38 silly lockFile 52277497-react-pdf-js react-pdf-js@
+39 silly resolved [ { name: 'react-pdf-js',
+39 silly resolved     version: '1.0.19',
+39 silly resolved     description: 'A React component to wrap PDF.js',
+39 silly resolved     main: './lib/index.js',
+39 silly resolved     'jsnext:main': './src/index.js',
+39 silly resolved     repository:
+39 silly resolved      { type: 'git',
+39 silly resolved        url: 'https://github.com/mikecousins/react-pdf-js' },
+39 silly resolved     scripts:
+39 silly resolved      { build: 'npm run build:lib && npm run build:umd && npm run build:umd:min',
+39 silly resolved        'build:lib': 'babel src --out-dir lib',
+39 silly resolved        'build:umd': 'webpack src/index.js dist/react-pdf-js.js --config webpack.config.development.js',
+39 silly resolved        'build:umd:min': 'webpack src/index.js dist/react-pdf-js.min.js --config webpack.config.production.js',
+39 silly resolved        clean: 'rimraf dist lib',
+39 silly resolved        lint: 'eslint src',
+39 silly resolved        prepublish: 'npm run lint && npm run clean && npm run build' },
+39 silly resolved     keywords: [ 'react', 'reactjs', 'pdf', 'pdfjs' ],
+39 silly resolved     author:
+39 silly resolved      { name: 'Mike Cousins',
+39 silly resolved        email: 'mike@mikecousins.com',
+39 silly resolved        url: 'http://github.com/mikecousins' },
+39 silly resolved     license: 'MIT',
+39 silly resolved     bugs: { url: 'https://github.com/mikecousins/react-pdf-js/issues' },
+39 silly resolved     homepage: 'https://github.com/mikecousins/react-pdf-js',
+39 silly resolved     dependencies: { 'pdfjs-dist': '1.5.294' },
+39 silly resolved     devDependencies:
+39 silly resolved      { 'babel-cli': '6.10.1',
+39 silly resolved        'babel-core': '6.9.1',
+39 silly resolved        'babel-eslint': '6.0.4',
+39 silly resolved        'babel-loader': '6.2.4',
+39 silly resolved        'babel-plugin-react-transform': '2.0.2',
+39 silly resolved        'babel-plugin-transform-runtime': '6.9.0',
+39 silly resolved        'babel-plugin-typecheck': '3.9.0',
+39 silly resolved        'babel-preset-es2015': '6.9.0',
+39 silly resolved        'babel-preset-react': '6.5.0',
+39 silly resolved        'babel-runtime': '6.9.2',
+39 silly resolved        eslint: '2.12.0',
+39 silly resolved        'eslint-config-airbnb': '9.0.1',
+39 silly resolved        'eslint-plugin-import': '1.8.1',
+39 silly resolved        'eslint-plugin-react': '5.1.1',
+39 silly resolved        'eslint-plugin-jsx-a11y': '1.4.2',
+39 silly resolved        react: '15.1.0',
+39 silly resolved        rifraf: '2.0.2',
+39 silly resolved        rimraf: '2.5.2',
+39 silly resolved        webpack: '1.13.1' },
+39 silly resolved     npmName: 'react-pdf-js',
+39 silly resolved     npmFileMap: [ [Object] ],
+39 silly resolved     readme: '#react-pdf-js\r\n---\r\n[![NPM Version](https://img.shields.io/npm/v/react-pdf-js.svg?style=flat-square)](https://www.npmjs.com/package/react-pdf-js)\r\n[![NPM Downloads](https://img.shields.io/npm/dm/react-pdf-js.svg?style=flat-square)](https://www.npmjs.com/package/react-pdf-js)\r\n[![Build Status](https://img.shields.io/travis/mikecousins/react-pdf-js/master.svg?style=flat-square)](https://travis-ci.org/mikecousins/react-pdf-js)\r\n[![Dependency Status](https://david-dm.org/mikecousins/react-pdf-js.svg)](https://david-dm.org/mikecousins/react-pdf-js)\r\n[![devDependency Status](https://david-dm.org/mikecousins/react-pdf-js/dev-status.svg)](https://david-dm.org/mikecousins/react-pdf-js#info=devDependencies)\r\n\r\n`react-pdf-js` provides a component for rendering PDF documents using [PDF.js](http://mozilla.github.io/pdf.js/). Written for React 15 and ES2015 using the Airbnb style guide.\r\n\r\n---\r\n\r\nUsage\r\n-----\r\n\r\nInstall with `npm install react-pdf-js`\r\n\r\nUse in your app (showing some basic pagination as well):\r\n\r\n```js\r\nimport React from \'react\';\r\nimport PDF from \'react-pdf-js\';\r\n\r\nclass MyPdfViewer extends React.Component {\r\n  constructor(props) {\r\n    super(props);\r\n    this.onDocumentComplete = this.onDocumentComplete.bind(this);\r\n    this.onPageCompleted = this.onPageCompleted.bind(this);\r\n    this.handlePrevious = this.handlePrevious.bind(this);\r\n    this.handleNext = this.handleNext.bind(this);\r\n  }\r\n\r\n  onDocumentComplete(pages) {\r\n    this.setState({ page: 1, pages });\r\n  }\r\n\r\n  onPageCompleted(page) {\r\n    this.setState({ page });\r\n  }\r\n\r\n  handlePrevious() {\r\n    this.setState({ page: this.state.page - 1 });\r\n  }\r\n\r\n  handleNext() {\r\n    this.setState({ page: this.state.page + 1 });\r\n  }\r\n\r\n  renderPagination(page, pages) {\r\n    let previousButton = <li className="previous" onClick={this.handlePrevious}><a href="#"><i className="fa fa-arrow-left"></i> Previous</a></li>;\r\n    if (page === 1) {\r\n      previousButton = <li className="previous disabled"><a href="#"><i className="fa fa-arrow-left"></i> Previous</a></li>;\r\n    }\r\n    let nextButton = <li className="next" onClick={this.handleNext}><a href="#">Next <i className="fa fa-arrow-right"></i></a></li>;\r\n    if (page === pages) {\r\n      nextButton = <li className="next disabled"><a href="#">Next <i className="fa fa-arrow-right"></i></a></li>;\r\n    }\r\n    return (\r\n      <nav>\r\n        <ul className="pager">\r\n          {previousButton}\r\n          {nextButton}\r\n        </ul>\r\n      </nav>\r\n      );\r\n  }\r\n\r\n  render() {\r\n    let pagination = null;\r\n    if (this.state.pages) {\r\n      pagination = this.renderPagination(this.state.page, this.state.pages);\r\n    }\r\n    return (\r\n      <div>\r\n        <PDF file="somefile.pdf" onDocumentComplete={this.onDocumentComplete} onPageCompleted={this.onPageCompleted} page={this.state.page} />\r\n        {pagination}\r\n      </div>\r\n  }\r\n}\r\n\r\nmodule.exports = MyPdfViewer;\r\n```\r\n\r\n\r\n## Credit\r\n\r\nThis project is a fork of [react-pdfjs](https://github.com/erikras/react-pdfjs) which itself was a port of [react-pdf](https://github.com/nnarhinen/react-pdf), so thank you to\r\nthe original authours.\r\n',
+39 silly resolved     readmeFilename: 'README.md',
+39 silly resolved     _id: 'react-pdf-js@1.0.19',
+39 silly resolved     _from: 'react-pdf-js@' } ]
+40 info install react-pdf-js@1.0.19 into /home/ucduser/meteor/test
+41 info installOne react-pdf-js@1.0.19
+42 info /home/ucduser/meteor/test/node_modules/react-pdf-js unbuild
+43 info preuninstall react-pdf-js@1.0.19
+44 info uninstall react-pdf-js@1.0.19
+45 verbose true,/home/ucduser/meteor/test/node_modules,/home/ucduser/meteor/test/node_modules unbuild react-pdf-js@1.0.19
+46 info postuninstall react-pdf-js@1.0.19
+47 verbose tar unpack /home/ucduser/.npm/react-pdf-js/1.0.19/package.tgz
+48 silly lockFile 1522cf8a-r-test-node-modules-react-pdf-js tar:///home/ucduser/meteor/test/node_modules/react-pdf-js
+49 verbose lock tar:///home/ucduser/meteor/test/node_modules/react-pdf-js /home/ucduser/.npm/1522cf8a-r-test-node-modules-react-pdf-js.lock
+50 silly lockFile 6e9e71ce--react-pdf-js-1-0-19-package-tgz tar:///home/ucduser/.npm/react-pdf-js/1.0.19/package.tgz
+51 verbose lock tar:///home/ucduser/.npm/react-pdf-js/1.0.19/package.tgz /home/ucduser/.npm/6e9e71ce--react-pdf-js-1-0-19-package-tgz.lock
+52 silly gunzTarPerm modes [ '755', '644' ]
+53 silly gunzTarPerm extractEntry package.json
+54 silly gunzTarPerm extractEntry README.md
+55 silly gunzTarPerm extractEntry LICENSE
+56 silly gunzTarPerm extractEntry dist/react-pdf-js.js
+57 silly gunzTarPerm extractEntry dist/react-pdf-js.min.js
+58 silly gunzTarPerm extractEntry lib/Pdf.js
+59 silly gunzTarPerm extractEntry lib/index.js
+60 silly gunzTarPerm extractEntry src/Pdf.js
+61 silly gunzTarPerm extractEntry src/index.js
+62 silly lockFile 1522cf8a-r-test-node-modules-react-pdf-js tar:///home/ucduser/meteor/test/node_modules/react-pdf-js
+63 silly lockFile 1522cf8a-r-test-node-modules-react-pdf-js tar:///home/ucduser/meteor/test/node_modules/react-pdf-js
+64 silly lockFile 6e9e71ce--react-pdf-js-1-0-19-package-tgz tar:///home/ucduser/.npm/react-pdf-js/1.0.19/package.tgz
+65 silly lockFile 6e9e71ce--react-pdf-js-1-0-19-package-tgz tar:///home/ucduser/.npm/react-pdf-js/1.0.19/package.tgz
+66 info preinstall react-pdf-js@1.0.19
+67 verbose readDependencies using package.json deps
+68 verbose readDependencies using package.json deps
+69 verbose cache add [ 'pdfjs-dist@1.5.294', null ]
+70 verbose cache add name=undefined spec="pdfjs-dist@1.5.294" args=["pdfjs-dist@1.5.294",null]
+71 verbose parsed url { protocol: null,
+71 verbose parsed url   slashes: null,
+71 verbose parsed url   auth: null,
+71 verbose parsed url   host: null,
+71 verbose parsed url   port: null,
+71 verbose parsed url   hostname: null,
+71 verbose parsed url   hash: null,
+71 verbose parsed url   search: null,
+71 verbose parsed url   query: null,
+71 verbose parsed url   pathname: 'pdfjs-dist@1.5.294',
+71 verbose parsed url   path: 'pdfjs-dist@1.5.294',
+71 verbose parsed url   href: 'pdfjs-dist@1.5.294' }
+72 verbose cache add name="pdfjs-dist" spec="1.5.294" args=["pdfjs-dist","1.5.294"]
+73 verbose parsed url { protocol: null,
+73 verbose parsed url   slashes: null,
+73 verbose parsed url   auth: null,
+73 verbose parsed url   host: null,
+73 verbose parsed url   port: null,
+73 verbose parsed url   hostname: null,
+73 verbose parsed url   hash: null,
+73 verbose parsed url   search: null,
+73 verbose parsed url   query: null,
+73 verbose parsed url   pathname: '1.5.294',
+73 verbose parsed url   path: '1.5.294',
+73 verbose parsed url   href: '1.5.294' }
+74 verbose addNamed [ 'pdfjs-dist', '1.5.294' ]
+75 verbose addNamed [ '1.5.294', '1.5.294' ]
+76 silly lockFile 56ee14be-pdfjs-dist-1-5-294 pdfjs-dist@1.5.294
+77 verbose lock pdfjs-dist@1.5.294 /home/ucduser/.npm/56ee14be-pdfjs-dist-1-5-294.lock
+78 verbose url raw pdfjs-dist/1.5.294
+79 verbose url resolving [ 'https://registry.npmjs.org/', './pdfjs-dist/1.5.294' ]
+80 verbose url resolved https://registry.npmjs.org/pdfjs-dist/1.5.294
+81 info trying registry request attempt 1 at 14:58:31
+82 verbose etag "32RBJWYW068Z442NJC01UHCDH"
+83 http GET https://registry.npmjs.org/pdfjs-dist/1.5.294
+84 http 304 https://registry.npmjs.org/pdfjs-dist/1.5.294
+85 silly registry.get cb [ 304,
+85 silly registry.get   { date: 'Fri, 24 Jun 2016 18:58:31 GMT',
+85 silly registry.get     via: '1.1 varnish',
+85 silly registry.get     'cache-control': 'max-age=300',
+85 silly registry.get     etag: '"32RBJWYW068Z442NJC01UHCDH"',
+85 silly registry.get     age: '29',
+85 silly registry.get     connection: 'keep-alive',
+85 silly registry.get     'x-served-by': 'cache-iad2131-IAD',
+85 silly registry.get     'x-cache': 'HIT',
+85 silly registry.get     'x-cache-hits': '1',
+85 silly registry.get     'x-timer': 'S1466794711.153127,VS0,VE0',
+85 silly registry.get     vary: 'Accept-Encoding' } ]
+86 verbose etag pdfjs-dist/1.5.294 from cache
+87 silly lockFile 56ee14be-pdfjs-dist-1-5-294 pdfjs-dist@1.5.294
+88 silly lockFile 56ee14be-pdfjs-dist-1-5-294 pdfjs-dist@1.5.294
+89 silly resolved [ { name: 'pdfjs-dist',
+89 silly resolved     version: '1.5.294',
+89 silly resolved     main: 'build/pdf.js',
+89 silly resolved     description: 'Generic build of Mozilla\'s PDF.js library.',
+89 silly resolved     keywords: [ 'Mozilla', 'pdf', 'pdf.js' ],
+89 silly resolved     homepage: 'http://mozilla.github.io/pdf.js/',
+89 silly resolved     bugs: { url: 'https://github.com/mozilla/pdf.js/issues' },
+89 silly resolved     license: 'Apache-2.0',
+89 silly resolved     dependencies: { 'node-ensure': '^0.0.0' },
+89 silly resolved     browser: { 'node-ensure': false },
+89 silly resolved     format: 'amd',
+89 silly resolved     repository: { type: 'git', url: 'https://github.com/mozilla/pdfjs-dist' },
+89 silly resolved     readme: '# PDF.js\n\nPDF.js is a Portable Document Format (PDF) library that is built with HTML5.\nOur goal is to create a general-purpose, web standards-based platform for\nparsing and rendering PDFs.\n\nThis is a pre-built version of the PDF.js source code. It is automatically\ngenerated by the build scripts.\n\nSee https://github.com/mozilla/pdf.js for learning and contributing.\n',
+89 silly resolved     readmeFilename: 'README.md',
+89 silly resolved     _id: 'pdfjs-dist@1.5.294',
+89 silly resolved     _from: 'pdfjs-dist@1.5.294' } ]
+90 info install pdfjs-dist@1.5.294 into /home/ucduser/meteor/test/node_modules/react-pdf-js
+91 info installOne pdfjs-dist@1.5.294
+92 info /home/ucduser/meteor/test/node_modules/react-pdf-js/node_modules/pdfjs-dist unbuild
+93 verbose tar unpack /home/ucduser/.npm/pdfjs-dist/1.5.294/package.tgz
+94 silly lockFile bfd24584-t-pdf-js-node-modules-pdfjs-dist tar:///home/ucduser/meteor/test/node_modules/react-pdf-js/node_modules/pdfjs-dist
+95 verbose lock tar:///home/ucduser/meteor/test/node_modules/react-pdf-js/node_modules/pdfjs-dist /home/ucduser/.npm/bfd24584-t-pdf-js-node-modules-pdfjs-dist.lock
+96 silly lockFile d87d9e7f-m-pdfjs-dist-1-5-294-package-tgz tar:///home/ucduser/.npm/pdfjs-dist/1.5.294/package.tgz
+97 verbose lock tar:///home/ucduser/.npm/pdfjs-dist/1.5.294/package.tgz /home/ucduser/.npm/d87d9e7f-m-pdfjs-dist-1-5-294-package-tgz.lock
+98 silly gunzTarPerm modes [ '755', '644' ]
+99 silly gunzTarPerm extractEntry package.json
+100 silly gunzTarPerm extractEntry README.md
+101 silly gunzTarPerm extractEntry LICENSE
+102 silly gunzTarPerm extractEntry bower.json
+103 silly gunzTarPerm extractEntry build/pdf.combined.js
+104 silly gunzTarPerm extractEntry build/pdf.js
+105 silly gunzTarPerm extractEntry build/pdf.worker.entry.js
+106 silly gunzTarPerm extractEntry build/pdf.worker.js
+107 silly gunzTarPerm extractEntry cmaps/LICENSE
+108 silly gunzTarPerm extractEntry cmaps/GBpc-EUC-H.bcmap
+109 silly gunzTarPerm extractEntry cmaps/78-H.bcmap
+110 silly gunzTarPerm extractEntry cmaps/78-RKSJ-H.bcmap
+111 silly gunzTarPerm extractEntry cmaps/78-RKSJ-V.bcmap
+112 silly gunzTarPerm extractEntry cmaps/78-V.bcmap
+113 silly gunzTarPerm extractEntry cmaps/78ms-RKSJ-H.bcmap
+114 silly gunzTarPerm extractEntry cmaps/78ms-RKSJ-V.bcmap
+115 silly gunzTarPerm extractEntry cmaps/83pv-RKSJ-H.bcmap
+116 silly gunzTarPerm extractEntry cmaps/90ms-RKSJ-H.bcmap
+117 silly gunzTarPerm extractEntry cmaps/90ms-RKSJ-V.bcmap
+118 silly gunzTarPerm extractEntry cmaps/90msp-RKSJ-H.bcmap
+119 silly gunzTarPerm extractEntry cmaps/90msp-RKSJ-V.bcmap
+120 silly gunzTarPerm extractEntry cmaps/90pv-RKSJ-H.bcmap
+121 silly gunzTarPerm extractEntry cmaps/90pv-RKSJ-V.bcmap
+122 silly gunzTarPerm extractEntry cmaps/Add-H.bcmap
+123 silly gunzTarPerm extractEntry cmaps/Add-RKSJ-H.bcmap
+124 silly gunzTarPerm extractEntry cmaps/Add-RKSJ-V.bcmap
+125 silly gunzTarPerm extractEntry cmaps/Add-V.bcmap
+126 silly gunzTarPerm extractEntry cmaps/Adobe-CNS1-0.bcmap
+127 silly gunzTarPerm extractEntry cmaps/Adobe-CNS1-1.bcmap
+128 silly gunzTarPerm extractEntry cmaps/Adobe-CNS1-2.bcmap
+129 silly gunzTarPerm extractEntry cmaps/Adobe-CNS1-3.bcmap
+130 silly gunzTarPerm extractEntry cmaps/Adobe-CNS1-4.bcmap
+131 silly gunzTarPerm extractEntry cmaps/Adobe-CNS1-5.bcmap
+132 silly gunzTarPerm extractEntry cmaps/Adobe-CNS1-6.bcmap
+133 silly gunzTarPerm extractEntry cmaps/Adobe-CNS1-UCS2.bcmap
+134 silly gunzTarPerm extractEntry cmaps/Adobe-GB1-0.bcmap
+135 silly gunzTarPerm extractEntry cmaps/Adobe-GB1-1.bcmap
+136 silly gunzTarPerm extractEntry cmaps/Adobe-GB1-2.bcmap
+137 silly gunzTarPerm extractEntry cmaps/Adobe-GB1-3.bcmap
+138 silly gunzTarPerm extractEntry cmaps/Adobe-GB1-4.bcmap
+139 silly gunzTarPerm extractEntry cmaps/Adobe-GB1-5.bcmap
+140 silly gunzTarPerm extractEntry cmaps/Adobe-GB1-UCS2.bcmap
+141 silly gunzTarPerm extractEntry cmaps/Adobe-Japan1-0.bcmap
+142 silly gunzTarPerm extractEntry cmaps/Adobe-Japan1-1.bcmap
+143 silly gunzTarPerm extractEntry cmaps/Adobe-Japan1-2.bcmap
+144 silly gunzTarPerm extractEntry cmaps/Adobe-Japan1-3.bcmap
+145 silly gunzTarPerm extractEntry cmaps/Adobe-Japan1-4.bcmap
+146 silly gunzTarPerm extractEntry cmaps/Adobe-Japan1-5.bcmap
+147 silly gunzTarPerm extractEntry cmaps/Adobe-Japan1-6.bcmap
+148 silly gunzTarPerm extractEntry cmaps/Adobe-Japan1-UCS2.bcmap
+149 silly gunzTarPerm extractEntry cmaps/Adobe-Korea1-0.bcmap
+150 silly gunzTarPerm extractEntry cmaps/Adobe-Korea1-1.bcmap
+151 silly gunzTarPerm extractEntry cmaps/Adobe-Korea1-2.bcmap
+152 silly gunzTarPerm extractEntry cmaps/Adobe-Korea1-UCS2.bcmap
+153 silly gunzTarPerm extractEntry cmaps/B5-H.bcmap
+154 silly gunzTarPerm extractEntry cmaps/B5-V.bcmap
+155 silly gunzTarPerm extractEntry cmaps/B5pc-H.bcmap
+156 silly gunzTarPerm extractEntry cmaps/B5pc-V.bcmap
+157 silly gunzTarPerm extractEntry cmaps/CNS-EUC-H.bcmap
+158 silly gunzTarPerm extractEntry cmaps/CNS-EUC-V.bcmap
+159 silly gunzTarPerm extractEntry cmaps/CNS1-H.bcmap
+160 silly gunzTarPerm extractEntry cmaps/CNS1-V.bcmap
+161 silly gunzTarPerm extractEntry cmaps/CNS2-H.bcmap
+162 silly gunzTarPerm extractEntry cmaps/CNS2-V.bcmap
+163 silly gunzTarPerm extractEntry cmaps/ETHK-B5-H.bcmap
+164 silly gunzTarPerm extractEntry cmaps/ETHK-B5-V.bcmap
+165 silly gunzTarPerm extractEntry cmaps/ETen-B5-H.bcmap
+166 silly gunzTarPerm extractEntry cmaps/ETen-B5-V.bcmap
+167 silly gunzTarPerm extractEntry cmaps/ETenms-B5-H.bcmap
+168 silly gunzTarPerm extractEntry cmaps/ETenms-B5-V.bcmap
+169 silly gunzTarPerm extractEntry cmaps/EUC-H.bcmap
+170 silly gunzTarPerm extractEntry cmaps/EUC-V.bcmap
+171 silly gunzTarPerm extractEntry cmaps/Ext-H.bcmap
+172 silly gunzTarPerm extractEntry cmaps/Ext-RKSJ-H.bcmap
+173 silly gunzTarPerm extractEntry cmaps/Ext-RKSJ-V.bcmap
+174 silly gunzTarPerm extractEntry cmaps/Ext-V.bcmap
+175 silly gunzTarPerm extractEntry cmaps/GB-EUC-H.bcmap
+176 silly gunzTarPerm extractEntry cmaps/GB-EUC-V.bcmap
+177 silly gunzTarPerm extractEntry cmaps/GB-H.bcmap
+178 silly gunzTarPerm extractEntry cmaps/GB-V.bcmap
+179 silly gunzTarPerm extractEntry cmaps/GBK-EUC-H.bcmap
+180 silly gunzTarPerm extractEntry cmaps/GBK-EUC-V.bcmap
+181 silly gunzTarPerm extractEntry cmaps/GBK2K-H.bcmap
+182 silly gunzTarPerm extractEntry cmaps/GBK2K-V.bcmap
+183 silly gunzTarPerm extractEntry cmaps/GBKp-EUC-H.bcmap
+184 silly gunzTarPerm extractEntry cmaps/GBKp-EUC-V.bcmap
+185 silly gunzTarPerm extractEntry cmaps/GBT-EUC-H.bcmap
+186 silly gunzTarPerm extractEntry cmaps/GBT-EUC-V.bcmap
+187 silly gunzTarPerm extractEntry cmaps/GBT-H.bcmap
+188 silly gunzTarPerm extractEntry cmaps/GBT-V.bcmap
+189 silly gunzTarPerm extractEntry cmaps/GBTpc-EUC-H.bcmap
+190 silly gunzTarPerm extractEntry cmaps/GBTpc-EUC-V.bcmap
+191 silly gunzTarPerm extractEntry cmaps/78-EUC-V.bcmap
+192 silly gunzTarPerm extractEntry cmaps/GBpc-EUC-V.bcmap
+193 silly gunzTarPerm extractEntry cmaps/H.bcmap
+194 silly gunzTarPerm extractEntry cmaps/HKdla-B5-H.bcmap
+195 silly gunzTarPerm extractEntry cmaps/HKdla-B5-V.bcmap
+196 silly gunzTarPerm extractEntry cmaps/HKdlb-B5-H.bcmap
+197 silly gunzTarPerm extractEntry cmaps/HKdlb-B5-V.bcmap
+198 silly gunzTarPerm extractEntry cmaps/HKgccs-B5-H.bcmap
+199 silly gunzTarPerm extractEntry cmaps/HKgccs-B5-V.bcmap
+200 silly gunzTarPerm extractEntry cmaps/HKm314-B5-H.bcmap
+201 silly gunzTarPerm extractEntry cmaps/HKm314-B5-V.bcmap
+202 silly gunzTarPerm extractEntry cmaps/HKm471-B5-H.bcmap
+203 silly gunzTarPerm extractEntry cmaps/HKm471-B5-V.bcmap
+204 silly gunzTarPerm extractEntry cmaps/HKscs-B5-H.bcmap
+205 silly gunzTarPerm extractEntry cmaps/HKscs-B5-V.bcmap
+206 silly gunzTarPerm extractEntry cmaps/Hankaku.bcmap
+207 silly gunzTarPerm extractEntry cmaps/Hiragana.bcmap
+208 silly gunzTarPerm extractEntry cmaps/KSC-EUC-H.bcmap
+209 silly gunzTarPerm extractEntry cmaps/KSC-EUC-V.bcmap
+210 silly gunzTarPerm extractEntry cmaps/KSC-H.bcmap
+211 silly gunzTarPerm extractEntry cmaps/KSC-Johab-H.bcmap
+212 silly gunzTarPerm extractEntry cmaps/KSC-Johab-V.bcmap
+213 silly gunzTarPerm extractEntry cmaps/KSC-V.bcmap
+214 silly gunzTarPerm extractEntry cmaps/KSCms-UHC-H.bcmap
+215 silly gunzTarPerm extractEntry cmaps/KSCms-UHC-HW-H.bcmap
+216 silly gunzTarPerm extractEntry cmaps/KSCms-UHC-HW-V.bcmap
+217 silly gunzTarPerm extractEntry cmaps/KSCms-UHC-V.bcmap
+218 silly gunzTarPerm extractEntry cmaps/KSCpc-EUC-H.bcmap
+219 silly gunzTarPerm extractEntry cmaps/KSCpc-EUC-V.bcmap
+220 silly gunzTarPerm extractEntry cmaps/Katakana.bcmap
+221 silly gunzTarPerm extractEntry cmaps/78-EUC-H.bcmap
+222 silly gunzTarPerm extractEntry cmaps/NWP-H.bcmap
+223 silly gunzTarPerm extractEntry cmaps/NWP-V.bcmap
+224 silly gunzTarPerm extractEntry cmaps/RKSJ-H.bcmap
+225 silly gunzTarPerm extractEntry cmaps/RKSJ-V.bcmap
+226 silly gunzTarPerm extractEntry cmaps/Roman.bcmap
+227 silly gunzTarPerm extractEntry cmaps/UniCNS-UCS2-H.bcmap
+228 silly gunzTarPerm extractEntry cmaps/UniCNS-UCS2-V.bcmap
+229 silly gunzTarPerm extractEntry cmaps/UniCNS-UTF16-H.bcmap
+230 silly gunzTarPerm extractEntry cmaps/UniCNS-UTF16-V.bcmap
+231 silly gunzTarPerm extractEntry cmaps/UniCNS-UTF32-H.bcmap
+232 silly gunzTarPerm extractEntry cmaps/UniCNS-UTF32-V.bcmap
+233 silly gunzTarPerm extractEntry cmaps/UniCNS-UTF8-H.bcmap
+234 silly gunzTarPerm extractEntry cmaps/UniCNS-UTF8-V.bcmap
+235 silly gunzTarPerm extractEntry cmaps/UniGB-UCS2-H.bcmap
+236 silly gunzTarPerm extractEntry cmaps/UniGB-UCS2-V.bcmap
+237 silly gunzTarPerm extractEntry cmaps/UniGB-UTF16-H.bcmap
+238 silly gunzTarPerm extractEntry cmaps/UniGB-UTF16-V.bcmap
+239 silly gunzTarPerm extractEntry cmaps/UniGB-UTF32-H.bcmap
+240 silly gunzTarPerm extractEntry cmaps/UniGB-UTF32-V.bcmap
+241 silly gunzTarPerm extractEntry cmaps/UniGB-UTF8-H.bcmap
+242 silly gunzTarPerm extractEntry cmaps/UniGB-UTF8-V.bcmap
+243 silly gunzTarPerm extractEntry cmaps/UniJIS-UCS2-H.bcmap
+244 silly gunzTarPerm extractEntry cmaps/UniJIS-UCS2-HW-H.bcmap
+245 silly gunzTarPerm extractEntry cmaps/UniJIS-UCS2-HW-V.bcmap
+246 silly gunzTarPerm extractEntry cmaps/UniJIS-UCS2-V.bcmap
+247 silly gunzTarPerm extractEntry cmaps/UniJIS-UTF16-H.bcmap
+248 silly gunzTarPerm extractEntry cmaps/UniJIS-UTF16-V.bcmap
+249 silly gunzTarPerm extractEntry cmaps/UniJIS-UTF32-H.bcmap
+250 silly gunzTarPerm extractEntry cmaps/UniJIS-UTF32-V.bcmap
+251 silly gunzTarPerm extractEntry cmaps/UniJIS-UTF8-H.bcmap
+252 silly gunzTarPerm extractEntry cmaps/UniJIS-UTF8-V.bcmap
+253 silly gunzTarPerm extractEntry cmaps/UniJIS2004-UTF16-H.bcmap
+254 silly gunzTarPerm extractEntry cmaps/UniJIS2004-UTF16-V.bcmap
+255 silly gunzTarPerm extractEntry cmaps/UniJIS2004-UTF32-H.bcmap
+256 silly gunzTarPerm extractEntry cmaps/UniJIS2004-UTF32-V.bcmap
+257 silly gunzTarPerm extractEntry cmaps/UniJIS2004-UTF8-H.bcmap
+258 silly gunzTarPerm extractEntry cmaps/UniJIS2004-UTF8-V.bcmap
+259 silly gunzTarPerm extractEntry cmaps/UniJISPro-UCS2-HW-V.bcmap
+260 silly gunzTarPerm extractEntry cmaps/UniJISPro-UCS2-V.bcmap
+261 silly gunzTarPerm extractEntry cmaps/UniJISPro-UTF8-V.bcmap
+262 silly gunzTarPerm extractEntry cmaps/UniJISX0213-UTF32-H.bcmap
+263 silly gunzTarPerm extractEntry cmaps/UniJISX0213-UTF32-V.bcmap
+264 silly gunzTarPerm extractEntry cmaps/UniJISX02132004-UTF32-H.bcmap
+265 silly gunzTarPerm extractEntry cmaps/UniJISX02132004-UTF32-V.bcmap
+266 silly gunzTarPerm extractEntry cmaps/UniKS-UCS2-H.bcmap
+267 silly gunzTarPerm extractEntry cmaps/UniKS-UCS2-V.bcmap
+268 silly gunzTarPerm extractEntry cmaps/UniKS-UTF16-H.bcmap
+269 silly gunzTarPerm extractEntry cmaps/UniKS-UTF16-V.bcmap
+270 silly gunzTarPerm extractEntry cmaps/UniKS-UTF32-H.bcmap
+271 silly gunzTarPerm extractEntry cmaps/UniKS-UTF32-V.bcmap
+272 silly gunzTarPerm extractEntry cmaps/UniKS-UTF8-H.bcmap
+273 silly gunzTarPerm extractEntry cmaps/UniKS-UTF8-V.bcmap
+274 silly gunzTarPerm extractEntry cmaps/V.bcmap
+275 silly gunzTarPerm extractEntry cmaps/WP-Symbol.bcmap
+276 silly gunzTarPerm extractEntry web/compatibility.js
+277 silly gunzTarPerm extractEntry web/pdf_viewer.js
+278 silly gunzTarPerm extractEntry web/images/annotation-noicon.svg
+279 silly gunzTarPerm extractEntry web/images/annotation-check.svg
+280 silly gunzTarPerm extractEntry web/images/annotation-help.svg
+281 silly gunzTarPerm extractEntry web/images/annotation-insert.svg
+282 silly gunzTarPerm extractEntry web/images/annotation-key.svg
+283 silly gunzTarPerm extractEntry web/images/annotation-newparagraph.svg
+284 silly gunzTarPerm extractEntry web/images/annotation-comment.svg
+285 silly gunzTarPerm extractEntry web/images/annotation-note.svg
+286 silly gunzTarPerm extractEntry web/images/annotation-paragraph.svg
+287 silly gunzTarPerm extractEntry web/images/loading-icon.gif
+288 silly gunzTarPerm extractEntry web/images/shadow.png
+289 silly gunzTarPerm extractEntry web/images/texture.png
+290 silly gunzTarPerm extractEntry web/pdf_viewer.css
+291 silly lockFile bfd24584-t-pdf-js-node-modules-pdfjs-dist tar:///home/ucduser/meteor/test/node_modules/react-pdf-js/node_modules/pdfjs-dist
+292 silly lockFile bfd24584-t-pdf-js-node-modules-pdfjs-dist tar:///home/ucduser/meteor/test/node_modules/react-pdf-js/node_modules/pdfjs-dist
+293 silly lockFile d87d9e7f-m-pdfjs-dist-1-5-294-package-tgz tar:///home/ucduser/.npm/pdfjs-dist/1.5.294/package.tgz
+294 silly lockFile d87d9e7f-m-pdfjs-dist-1-5-294-package-tgz tar:///home/ucduser/.npm/pdfjs-dist/1.5.294/package.tgz
+295 info preinstall pdfjs-dist@1.5.294
+296 verbose readDependencies using package.json deps
+297 verbose readDependencies using package.json deps
+298 verbose cache add [ 'node-ensure@^0.0.0', null ]
+299 verbose cache add name=undefined spec="node-ensure@^0.0.0" args=["node-ensure@^0.0.0",null]
+300 verbose parsed url { protocol: null,
+300 verbose parsed url   slashes: null,
+300 verbose parsed url   auth: null,
+300 verbose parsed url   host: null,
+300 verbose parsed url   port: null,
+300 verbose parsed url   hostname: null,
+300 verbose parsed url   hash: null,
+300 verbose parsed url   search: null,
+300 verbose parsed url   query: null,
+300 verbose parsed url   pathname: 'node-ensure@^0.0.0',
+300 verbose parsed url   path: 'node-ensure@^0.0.0',
+300 verbose parsed url   href: 'node-ensure@^0.0.0' }
+301 verbose cache add name="node-ensure" spec="^0.0.0" args=["node-ensure","^0.0.0"]
+302 verbose parsed url { protocol: null,
+302 verbose parsed url   slashes: null,
+302 verbose parsed url   auth: null,
+302 verbose parsed url   host: null,
+302 verbose parsed url   port: null,
+302 verbose parsed url   hostname: null,
+302 verbose parsed url   hash: null,
+302 verbose parsed url   search: null,
+302 verbose parsed url   query: null,
+302 verbose parsed url   pathname: '^0.0.0',
+302 verbose parsed url   path: '^0.0.0',
+302 verbose parsed url   href: '^0.0.0' }
+303 verbose addNamed [ 'node-ensure', '^0.0.0' ]
+304 verbose addNamed [ null, '=0.0.0' ]
+305 silly lockFile 1f24dd5a-node-ensure-0-0-0 node-ensure@^0.0.0
+306 verbose lock node-ensure@^0.0.0 /home/ucduser/.npm/1f24dd5a-node-ensure-0-0-0.lock
+307 silly addNameRange { name: 'node-ensure', range: '=0.0.0', hasData: false }
+308 verbose url raw node-ensure
+309 verbose url resolving [ 'https://registry.npmjs.org/', './node-ensure' ]
+310 verbose url resolved https://registry.npmjs.org/node-ensure
+311 info trying registry request attempt 1 at 14:58:31
+312 verbose etag "6Z2QWVUMNZO96Y7BL7N39Z04I"
+313 http GET https://registry.npmjs.org/node-ensure
+314 http 304 https://registry.npmjs.org/node-ensure
+315 silly registry.get cb [ 304,
+315 silly registry.get   { date: 'Fri, 24 Jun 2016 18:58:31 GMT',
+315 silly registry.get     via: '1.1 varnish',
+315 silly registry.get     'cache-control': 'max-age=300',
+315 silly registry.get     etag: '"6Z2QWVUMNZO96Y7BL7N39Z04I"',
+315 silly registry.get     age: '26',
+315 silly registry.get     connection: 'keep-alive',
+315 silly registry.get     'x-served-by': 'cache-iad2147-IAD',
+315 silly registry.get     'x-cache': 'HIT',
+315 silly registry.get     'x-cache-hits': '1',
+315 silly registry.get     'x-timer': 'S1466794711.854748,VS0,VE0',
+315 silly registry.get     vary: 'Accept-Encoding' } ]
+316 verbose etag node-ensure from cache
+317 silly addNameRange number 2 { name: 'node-ensure', range: '=0.0.0', hasData: true }
+318 silly addNameRange versions [ 'node-ensure', [ '0.0.0' ] ]
+319 verbose addNamed [ 'node-ensure', '0.0.0' ]
+320 verbose addNamed [ '0.0.0', '0.0.0' ]
+321 silly lockFile 3cee250a-node-ensure-0-0-0 node-ensure@0.0.0
+322 verbose lock node-ensure@0.0.0 /home/ucduser/.npm/3cee250a-node-ensure-0-0-0.lock
+323 silly lockFile 3cee250a-node-ensure-0-0-0 node-ensure@0.0.0
+324 silly lockFile 3cee250a-node-ensure-0-0-0 node-ensure@0.0.0
+325 silly lockFile 1f24dd5a-node-ensure-0-0-0 node-ensure@^0.0.0
+326 silly lockFile 1f24dd5a-node-ensure-0-0-0 node-ensure@^0.0.0
+327 silly resolved [ { name: 'node-ensure',
+327 silly resolved     version: '0.0.0',
+327 silly resolved     description: 'Async module-loading library and protocol for bundlers/loaders targeting isomorphic apps and Node.js.',
+327 silly resolved     main: 'index.js',
+327 silly resolved     browser: { './index.js': './browser.js' },
+327 silly resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+327 silly resolved     keywords:
+327 silly resolved      [ 'require',
+327 silly resolved        'ensure',
+327 silly resolved        'dynamic',
+327 silly resolved        'module',
+327 silly resolved        'loader',
+327 silly resolved        'bundler',
+327 silly resolved        'async' ],
+327 silly resolved     author: { name: 'Carl A. Bauer' },
+327 silly resolved     repository:
+327 silly resolved      { type: 'git',
+327 silly resolved        url: 'https://github.com/bauerca/node-ensure.git' },
+327 silly resolved     bugs: { url: 'https://github.com/bauerca/node-ensure/issues' },
+327 silly resolved     homepage: 'https://github.com/bauerca/node-ensure',
+327 silly resolved     license: 'MIT',
+327 silly resolved     readme: '# node-ensure\n\nA simple library that shims asynchronous module loading into Node.js to help\nwith building module bundlers and client-side loaders for isomorphic apps.\nThis library is super slim (read the source) and mainly represents an agreement\nbetween developers and users of a particular bundler/loader.\n\nNOTE: This module is *not* compatible with Browserify. It is for developers that\nwant to split their bundles for the client. For example, see\n[dynapack](https://github.com/bauerca/dynapack).\n\n*Syntax is inspired by the CommonJS\n[Modules/Async/A](http://wiki.commonjs.org/wiki/Modules/Async/A) proposal.*\n\n\n## Installation\n\n```\nnpm install node-ensure\n```\n\n## Example\n\n```js\nvar ensure = require(\'node-ensure\');\n\nensure([\'superagent\', \'react\'], function(err) {\n  var request = require(\'superagent\');\n  var React = require(\'react\');\n\n  // Do the coolest of things.\n});\n```\n\nIf your bundler needs `require.ensure`, do this instead:\n\n```js\nrequire.ensure = require(\'node-ensure\');\n\nrequire.ensure([\'superagent\', \'react\'], function(err) {\n  var request = require(\'superagent\');\n  var React = require(\'react\');\n\n  // Do the coolest of things.\n});\n```\n\n## Usage\n\nThe returned function takes an array of strings and a callback, in that\norder (see the example above). The callback takes a single error argument, which\nusually indicates a network problem or other client-side loader-specific runtime\nerror (it should never receive an error when used in Node.js).\n\nWithin the ensure callback, load modules with standard require calls.\n\n## Bundlers/Loaders\n\nThis library primarily constitutes an agreement between users and developers of\nmodule bundlers and (client-side) loaders. The users agree to the usage instructions\nsupplied above.\n\nBundlers and/or loaders must adhere to the following:\n\n- The bundler/loader uses the package.json `"browser"` property for replacing\n  server-only modules with browser-ready counterparts (a la Browserify).\n- The `require` function passed to a module must have a `require.ensure`\n  function.\n- Each `require.ensure` must accept the same arguments as described in [Usage](#usage).\n- Each `require.ensure` must not access variables via closure unless those variables\n  are shared by **all** `require.ensure` functions.\n- Each `require.ensure` may access properties\n  on `this`. However, this assumes users have attached node-ensure to `require` via\n  `require.ensure = require(\'node-ensure\')`.\n\nHappy loading!\n\n# License\n\nMIT\n',
+327 silly resolved     readmeFilename: 'README.md',
+327 silly resolved     _id: 'node-ensure@0.0.0',
+327 silly resolved     _from: 'node-ensure@^0.0.0' } ]
+328 info install node-ensure@0.0.0 into /home/ucduser/meteor/test/node_modules/react-pdf-js/node_modules/pdfjs-dist
+329 info installOne node-ensure@0.0.0
+330 info /home/ucduser/meteor/test/node_modules/react-pdf-js/node_modules/pdfjs-dist/node_modules/node-ensure unbuild
+331 verbose tar unpack /home/ucduser/.npm/node-ensure/0.0.0/package.tgz
+332 silly lockFile cea674d3-js-dist-node-modules-node-ensure tar:///home/ucduser/meteor/test/node_modules/react-pdf-js/node_modules/pdfjs-dist/node_modules/node-ensure
+333 verbose lock tar:///home/ucduser/meteor/test/node_modules/react-pdf-js/node_modules/pdfjs-dist/node_modules/node-ensure /home/ucduser/.npm/cea674d3-js-dist-node-modules-node-ensure.lock
+334 silly lockFile 82d0b312-pm-node-ensure-0-0-0-package-tgz tar:///home/ucduser/.npm/node-ensure/0.0.0/package.tgz
+335 verbose lock tar:///home/ucduser/.npm/node-ensure/0.0.0/package.tgz /home/ucduser/.npm/82d0b312-pm-node-ensure-0-0-0-package-tgz.lock
+336 silly gunzTarPerm modes [ '755', '644' ]
+337 silly gunzTarPerm extractEntry package.json
+338 silly gunzTarPerm extractEntry .npmignore
+339 silly gunzTarPerm extractEntry README.md
+340 silly gunzTarPerm extractEntry browser.js
+341 silly gunzTarPerm extractEntry index.js
+342 silly lockFile cea674d3-js-dist-node-modules-node-ensure tar:///home/ucduser/meteor/test/node_modules/react-pdf-js/node_modules/pdfjs-dist/node_modules/node-ensure
+343 silly lockFile cea674d3-js-dist-node-modules-node-ensure tar:///home/ucduser/meteor/test/node_modules/react-pdf-js/node_modules/pdfjs-dist/node_modules/node-ensure
+344 silly lockFile 82d0b312-pm-node-ensure-0-0-0-package-tgz tar:///home/ucduser/.npm/node-ensure/0.0.0/package.tgz
+345 silly lockFile 82d0b312-pm-node-ensure-0-0-0-package-tgz tar:///home/ucduser/.npm/node-ensure/0.0.0/package.tgz
+346 info preinstall node-ensure@0.0.0
+347 verbose readDependencies using package.json deps
+348 verbose readDependencies using package.json deps
+349 silly resolved []
+350 verbose about to build /home/ucduser/meteor/test/node_modules/react-pdf-js/node_modules/pdfjs-dist/node_modules/node-ensure
+351 info build /home/ucduser/meteor/test/node_modules/react-pdf-js/node_modules/pdfjs-dist/node_modules/node-ensure
+352 verbose linkStuff [ false,
+352 verbose linkStuff   false,
+352 verbose linkStuff   false,
+352 verbose linkStuff   '/home/ucduser/meteor/test/node_modules/react-pdf-js/node_modules/pdfjs-dist/node_modules' ]
+353 info linkStuff node-ensure@0.0.0
+354 verbose linkBins node-ensure@0.0.0
+355 verbose linkMans node-ensure@0.0.0
+356 verbose rebuildBundles node-ensure@0.0.0
+357 info install node-ensure@0.0.0
+358 info postinstall node-ensure@0.0.0
+359 verbose about to build /home/ucduser/meteor/test/node_modules/react-pdf-js/node_modules/pdfjs-dist
+360 info build /home/ucduser/meteor/test/node_modules/react-pdf-js/node_modules/pdfjs-dist
+361 verbose linkStuff [ false,
+361 verbose linkStuff   false,
+361 verbose linkStuff   false,
+361 verbose linkStuff   '/home/ucduser/meteor/test/node_modules/react-pdf-js/node_modules' ]
+362 info linkStuff pdfjs-dist@1.5.294
+363 verbose linkBins pdfjs-dist@1.5.294
+364 verbose linkMans pdfjs-dist@1.5.294
+365 verbose rebuildBundles pdfjs-dist@1.5.294
+366 verbose rebuildBundles [ 'node-ensure' ]
+367 info install pdfjs-dist@1.5.294
+368 info postinstall pdfjs-dist@1.5.294
+369 verbose about to build /home/ucduser/meteor/test/node_modules/react-pdf-js
+370 info build /home/ucduser/meteor/test/node_modules/react-pdf-js
+371 verbose linkStuff [ false, false, false, '/home/ucduser/meteor/test/node_modules' ]
+372 info linkStuff react-pdf-js@1.0.19
+373 verbose linkBins react-pdf-js@1.0.19
+374 verbose linkMans react-pdf-js@1.0.19
+375 verbose rebuildBundles react-pdf-js@1.0.19
+376 verbose rebuildBundles [ 'pdfjs-dist' ]
+377 info install react-pdf-js@1.0.19
+378 info postinstall react-pdf-js@1.0.19
+379 error peerinvalid The package react does not satisfy its siblings' peerDependencies requirements!
+379 error peerinvalid Peer react-addons-css-transition-group@15.1.0 wants react@^15.1.0
+379 error peerinvalid Peer react-addons-pure-render-mixin@15.1.0 wants react@^15.1.0
+379 error peerinvalid Peer react-dom@15.1.0 wants react@^15.1.0
+379 error peerinvalid Peer react-mounter@1.2.0 wants react@0.14.x || 15.x.x
+379 error peerinvalid Peer react-pdf@0.0.10 wants react@^0.13.3 || ^0.14
+380 error System Linux 3.19.0-56-generic
+381 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "--save" "react-pdf-js"
+382 error cwd /home/ucduser/meteor/test
+383 error node -v v0.10.25
+384 error npm -v 1.3.10
+385 error code EPEERINVALID
+386 verbose exit [ 1, true ]

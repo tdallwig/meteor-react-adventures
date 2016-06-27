@@ -1,0 +1,23 @@
+{
+  "name": "meteor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "d3": "^3.5.17",
+    "react": "~15.1.0",
+    "react-addons-css-transition-group": "~15.1.0",
+    "react-addons-pure-render-mixin": "~15.1.0",
+    "react-dom": "~15.1.0",
+    "react-mixin": "~2.0.2",
+    "react-mounter": "~1.2.0"
+  }
+}
